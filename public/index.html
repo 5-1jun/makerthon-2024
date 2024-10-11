@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>환경 정복자</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="text/javascript">
+      const IMAGES = ["images/01.png"];
+
+      const imageElement = document.getElementById("image_main");
+      imageElement.src = IMAGES[Math.floor(Math.random() * IMAGES.length)];
+    </script>
+  </head>
+  <body class="w-full h-dvh">
+    <img id="image_main" class="w-full h-full object-contain" />
+  </body>
+</html>
