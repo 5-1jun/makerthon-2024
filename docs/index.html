@@ -4,9 +4,25 @@
     <title>환경 정복자</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      .fade-in {
+        animation: fadeIn 2s ease-in;
+      }
+    </style>
   </head>
-  <body class="w-full h-dvh">
-    <img id="image_main" class="w-full h-full object-contain" />
+  <body class="w-full h-dvh flex flex-col items-center justify-center bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white">
+    <img id="image_main" class="w-full h-full object-contain mb-4 fade-in" />
+    
+    <!-- 추가된 팀 이름 및 제작자 정보 -->
+    <div class="text-center mt-4 fade-in">
+      <p class="text-2xl font-extrabold">팀명: To the core</p>
+      <p class="text-lg font-semibold">제작자: 오한준</p>
+    </div>
+
     <script type="text/javascript">
       const IMAGES = ["images/01.png", "images/02.jpg"];
 
