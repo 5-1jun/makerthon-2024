@@ -10,17 +10,17 @@
         100% { opacity: 1; }
       }
       .fade-in {
-        animation: fadeIn 2s ease-in;
+        animation: fadeIn 1s ease-in;
       }
     </style>
   </head>
-  <body class="w-full h-dvh flex flex-col items-center justify-center bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 text-white">
-    <img id="image_main" class="w-full h-full object-contain mb-4 fade-in" />
+  <body class="w-full h-screen flex flex-col items-center justify-center bg-gray-900 text-white">
+    <img id="image_main" class="max-w-full max-h-screen object-contain mb-6 fade-in" alt="랜덤 이미지" />
     
     <!-- 추가된 팀 이름 및 제작자 정보 -->
-    <div class="text-center mt-4 fade-in">
-      <p class="text-2xl font-extrabold">팀명: To the core</p>
-      <p class="text-lg font-semibold">제작자: 오한준</p>
+    <div class="text-center fade-in">
+      <p class="text-xl font-bold">팀 이름: 환경 정복자 팀</p>
+      <p class="text-md">제작자: 홍길동, 김철수, 이영희</p>
     </div>
 
     <script type="text/javascript">
