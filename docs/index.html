@@ -25,7 +25,7 @@
 
     <script type="text/javascript">
       const IMAGES = ["images/01.jpg", "images/02.jpg","images/03.jpg","images/04.jpg","images/05.jpg","images/06.jpg","images/07.jpg"];
-
+      const cacheBuster = new Date().getTime();
       const imageElement = document.getElementById("image_main");
       imageElement.src = IMAGES[Math.floor(Math.random() * IMAGES.length)];
     </script>
