@@ -14,21 +14,26 @@
       }
     </style>
   </head>
-  
+  <body class="w-full h-screen flex flex-col items-center justify-center bg-[#e0f7df]">
     <!-- 팀 이름 표시 -->
     <div class="text-center fade-in mt-4">
       <p class="text-2xl font-bold">To the core</p>
     </div>
-    <img id="image_main" class="max-w-full max-h-screen object-contain mb-6 fade-in mx-auto" alt="랜덤 이미지" />
-    
 
+    <!-- 고정 이미지 3개 표시 -->
+    <div class="flex flex-col items-center mt-4">
+      <img src="images/111.jpg" class="max-w-full max-h-32 object-contain mb-2 fade-in" alt="고정 이미지 1" />
+      <img src="images/222.jpg" class="max-w-full max-h-32 object-contain mb-2 fade-in" alt="고정 이미지 2" />
+      <img src="images/111.jpg" class="max-w-full max-h-32 object-contain mb-6 fade-in" alt="고정 이미지 3" />
+    </div>
+
+    <!-- 랜덤 이미지 표시 -->
+    <img id="image_main" class="max-w-full max-h-screen object-contain mb-6 fade-in mx-auto" alt="랜덤 이미지" />
 
     <script type="text/javascript">
       const IMAGES = ["images/01.jpg", "images/02.jpg","images/03.jpg","images/04.jpg","images/05.jpg","images/06.jpg","images/07.jpg"];
-      const cacheBuster = new Date().getTime();
       const imageElement = document.getElementById("image_main");
       imageElement.src = IMAGES[Math.floor(Math.random() * IMAGES.length)];
     </script>
-  </body class="w-full h-screen flex flex-col items-center justify-center bg-[#e0f7df]">
-    >
+  </body>
 </html>
