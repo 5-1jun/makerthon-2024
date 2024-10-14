@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>랜덤 이미지 페이지</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+      .fade-in {
+        animation: fadeIn 1s ease-in;
+      }
+    </style>
+  </head>
+  <body class="w-full h-screen flex flex-col items-center justify-center bg-[#e0f7df]">
+    <!-- 랜덤 이미지 표시 -->
+    <img id="image_main" class="w-full max-w-2xl object-cover object-top mb-6 fade-in mx-auto" alt="랜덤 이미지" />
+
+    <script type="text/javascript">
+      const IMAGES = ["images/01.jpg", "images/02.jpg", "images/03.jpg", "images/04.jpg", "images/05.jpg", "images/06.jpg", "images/07.jpg"];
+      const imageElement = document.getElementById("image_main");
+      imageElement.src = IMAGES[Math.floor(Math.random() * IMAGES.length)];
+    </script>
+  </body>
+</html>
